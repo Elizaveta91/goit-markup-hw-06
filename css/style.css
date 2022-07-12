@@ -258,6 +258,7 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+
 .form-text {
     margin-bottom: 12px;
     font-weight: 700;
@@ -271,6 +272,7 @@ header {
     flex-direction: column;
     padding: 0;
     margin-bottom: 10px;
+ 
 }
 label {
     margin-bottom: 4px;
@@ -300,8 +302,7 @@ label {
 textarea:focus {
     outline: transparent;
     border-color: var(--accent-color);
-}
-
+} 
 
 .data-comment {
     display: flex;
@@ -327,17 +328,10 @@ textarea {
     bottom: 11px;
     fill: currentColor;
 }
-.data-icon:hover,
-.data-icon:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
 
-.data-icon:hover .svg-icon,
-.data-icon:focus .svg-icon {
+.input-icon:focus ~ .svg-icon {
     fill: var(--accent-color);
 }
-
 
 .form-checkbox {
     display: flex;
