@@ -309,7 +309,7 @@ textarea:focus {
     flex-direction: column;
     margin-bottom: 20px;
     width: 448px;
-    height: 120px;
+    height: 138px;
 }
 
 textarea {
@@ -321,12 +321,19 @@ textarea {
     transition: var(--anim);
     resize: none;
 }
+.data-comment textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
 
 .svg-icon {
     position: absolute;
     left: 12px;
     bottom: 11px;
-    fill: currentColor;
+    fill: var(--title-text-color);
 }
 
 .input-icon:focus ~ .svg-icon {
@@ -386,7 +393,6 @@ textarea {
     cursor: pointer;
     transition: var(--anim);
 }
-
 
 
 /* Секція особливості */
