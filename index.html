@@ -53,28 +53,28 @@
     <div class="data"> 
     <label for="name">Имя</label>
     <div class="data-icon">
-        <input class="input-icon" type="text" name="name" autofocus>
+        <input class="input-icon" type="text" name="name" id="name" autofocus>
         <svg class="svg-icon" width="18" height="18"><use href="./img/icons.svg#icon-person"></use></svg>
     </div>
     </div>
     <div class="data">
     <label for="tel">Телефон</label>
         <div class="data-icon">
-            <input class="input-icon" type="tel" name="phone_number">
+            <input class="input-icon" type="tel" name="phone_number" id="tel">
         <svg class="svg-icon" width="18" height="18"><use href="./img/icons.svg#icon-phone"></use></svg>
         </div>
         </div>
         <div class="data">
         <label for="email">Почта</label>
         <div class="data-icon">
-            <input class="input-icon" type="email" name="email" autofocus>
+            <input class="input-icon" type="email" name="email" id="email">
         <svg class="svg-icon" width="18" height="18"><use href="./img/icons.svg#icon-mail"></use></svg>
         </div>
     </div>
 
 <div class="data-comment">
     <label for="comment">Комментарий</label>
-        <textarea name="comment" rows="10" placeholder="Введите текст"></textarea>
+        <textarea id="comment" name="comment" rows="10" placeholder="Введите текст"></textarea>
 </div>
     <label class="form-checkbox">
         <input class="visually-hidden form-checkbox-input" type="checkbox" name="user-agreement" checked />
@@ -91,11 +91,10 @@
     </div>
     </div>
     
-
     <!-- Секція особливості  -->
 <section class="section">
     <div class="container">
-    <h2 clsss="visually-hidden"></h2>
+    <h2 hidden>Преимущества</h2>
     <ul class="list">
 <li class="list-box">
     <div class="icon-feature">
@@ -175,15 +174,15 @@
             <use href="./img/icons.svg#icon-instagram-team"></use>
         </svg></a></li>
         <li class="icon-list">
-        <a href=""class="team-link"><svg class="social-icons" width="20" height="20">
+        <a href="" class="team-link"><svg class="social-icons" width="20" height="20">
             <use href="./img/icons.svg#icon-twitter-team"></use>
         </svg></a></li>
         <li class="icon-list">
-        <a href=""class="team-link"><svg class="social-icons" width="20" height="20">
+        <a href="" class="team-link"><svg class="social-icons" width="20" height="20">
             <use href="./img/icons.svg#icon-facebook-team"></use>
         </svg></a></li>
         <li class="icon-list">
-        <a href=""class="team-link"><svg class="social-icons" width="20" height="20">
+        <a href="" class="team-link"><svg class="social-icons" width="20" height="20">
             <use href="./img/icons.svg#icon-linkedin-team"></use>
         </svg></a></li>
     </ul>  
@@ -334,10 +333,9 @@
     <div class="footer-join">
     <strong class="join">Подпишитесь на рассылку</strong>
     <form class="form-sign">
-        <label>
-            <input type="email" name="email" placeholder="E-mail"/>
-        </label>
-        <button type="submit"class="footer-button">Подписаться<svg class="footer-icons-join" width="24" height="24">
+        <label for="user_email"></label>
+            <input type="email" name="email" placeholder="E-mail" id="user_email"/>
+        <button type="submit" class="footer-button">Подписаться<svg class="footer-icons-join" width="24" height="24">
         <use href="./img/icons.svg#icon-send"></use></svg></button>
     </form>
     </div>
